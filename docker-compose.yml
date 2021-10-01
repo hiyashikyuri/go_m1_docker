@@ -5,7 +5,7 @@ services:
     volumes:
       - ./:/app
     tty: true
-    command: "go run main.go"
+    command: "air -c .air.toml"
     build:
       context: .
       dockerfile: Dockerfile
